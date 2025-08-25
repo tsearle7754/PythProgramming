@@ -1,0 +1,46 @@
+# int built-in function (BIF)
+print(int(54.3))
+print(int("100", 8))
+
+# bool BIF
+# True False
+print(bool(True))
+print(bool(1))
+print(bool(0))
+
+# logical operators
+# not and or
+
+print(bool(True or 0))
+print(bool(True and 0))
+print(bool(not 0))
+
+# floats
+n = .1
+print(n + n + n)
+
+# decimal
+from decimal import Decimal
+d = Decimal("0.1") + Decimal("0.1") + Decimal("0.1")
+print(d)
+
+# dir BIF
+print(dir(str))
+print(dir(int))
+
+# help BIF
+help(str.strip) # can use any method to see what it's doing
+
+# strip method
+text = "   Hello   "
+print("'" + text.strip() + "'")
+
+# replace
+msg = "I love Java"
+print(msg.replace("Java", "Python"))
+
+# concatenate and repeat strings
+s1 = "Hello"
+s2 = " World"
+print(s1)
+print(s2)
