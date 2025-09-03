@@ -1,0 +1,71 @@
+Notes for Sep 3rd:
+
+# Can use range and list in for loop
+for i in range(1, 10, 2):
+
+# Lists are used with brackets [] and can be modified after assigned. Mutable.
+list = ["some", "list", "separated", "by", "commmas"]
+list.append("allows you to add to list")
+
+# List comprehensions
+Combines the for loop and creation of new elements in one line.
+multiples = [x for x in range(1,51) if x % 3 == 0 and x % 5 == 0]
+
+# Create a list with the squares of numbers from 1 to a scannes number using list comprehension.
+n = int(input("Enter an integer: ")
+list = [i^2 for i in range(1, n+1)
+print(list)
+
+# Python List Operations
+Can add, subtract, repeat, slice, and access list elements the same way as with strings.
+num = [1, 2, 3]
+num.append(5)   # just gets added to the end of the list
+num.insert(2, 22)   # the place, then what's being inserted
+
+# Common List Methods
+remove()   # removes the first occurence of a specified value
+index()    # returns the index of the first occurence of the value
+count()   # returns the number of occurences of a value
+sort/ed()   # sorts the list in place (sort()) or returns a new sorted list (sorted())
+
+# List Practice
+n = int(input("Enter the number of elements: "))
+elements = []
+while n:
+  elements.append(int(input()))
+  n -= 1
+print(elements)
+# Check if all elements are equal. Print true, otherwise false.
+if len(elements) < 2:
+  print(bool(True))
+else:
+  print(bool(False))
+
+# Tuple- similar to a list, but CANNOT be changed after declared
+# Create a tuple
+my_tuple = (1, 2, 3.5, "UP")
+print(my_tuple[-1])   # can be called on but not modified
+# my_tuple[0] = 5  # error
+
+# Tuple Practice
+# Unpacking
+a, b, c, d = my_tuple
+print(a, b, c, d)  # will print (1, 2, 3.5, "UP")
+
+# Nested tuple
+points = (
+  (1, 2, 3)
+  (4, 5, 6)
+)
+print(points)
+# Use tuples for things that shouldn't change. Faster and uses less memory than lists. Can be used as keys in dictionaries and return multiple values. Immutable.
+
+# Dictionaries
+# Mutable, unordered collection of key-value pairs.
+my_dict = {"name": "Jack", "age": 25, "city": "Lakeland"}
+my_dict2 = dict(name = "Anna", age = 19, city = "Orlando")  # built-in function
+empty_dict = {}
+print(my_dict)
+print(my_dict2)
+print(empty_dict)
+print(my_dict["name"])
