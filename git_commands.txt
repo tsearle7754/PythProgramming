@@ -19,4 +19,4 @@ git branch <name> - create a new branch
 git checkout <name> - switch to a branch
 git checkout -b <name> - create and switch in one step
 git merge <name> - merge another branch into current
-git branch -d <name> - delete a branch(safe)
+git branch -d <name> - delete a branch (safe)
