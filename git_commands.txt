@@ -1,0 +1,22 @@
+# type q to exit when shown :[]
+
+git init - initializes a new git repository
+
+git status - shows status of changes
+
+git add - add files to the staging area     -- to split up changes and make it easier to track the changes
+
+git commit - save changes
+
+git log - shows commit history  (--oneline will show you in one line the history)
+
+git diff (<file>) - shows unstaged changes
+
+git restore <file> - discards changes for a file (restores to state from previous commit)   (--staged <file> will unstage)
+
+git branch - list all branches
+git branch <name> - create a new branch
+git checkout <name> - switch to a branch
+git checkout -b <name> - create and switch in one step
+git merge <name> - merge another branch into current
+git branch -d <name> - delete a branch(safe)
