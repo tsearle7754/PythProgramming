@@ -5,3 +5,4 @@ with ui.card():
     ui.button('Add label', on_click=lambda: ui.label('Click!'))
 
 ui.run()
+
