@@ -1,0 +1,3 @@
+INFO: message here
+WARNING: message here
+ERROR: message here
