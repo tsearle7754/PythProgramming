@@ -20,3 +20,9 @@ for word in words:
 with open("word_count.txt", "w", encoding="utf-8") as f:
     for word, counts in count.items():
         file.write(f"{word}: {counts}\n")
+        
+top_words = sorted(count.items(), key=lambda x: x[1], reverse=True)[:5]
+
+print("Top 5 words:")
+for word, count in top_words:
+    print(f"{word}: {counts}")

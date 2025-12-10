@@ -69,7 +69,9 @@ def decode_message(msg):
 name = ui.input("Enter name: ")
 email = ui.input("Enter email: ")
 
-def create_student(student):
+student_list = []
+
+def create_student(event=None):
     pass
     
 #button
